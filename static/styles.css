@@ -1,15 +1,130 @@
 body {
+    height: 100vh;
     background-color: lightslategray;
     font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* header css */
 
 .header {
     display: flex;
     align-items: center;
-    background-color: white;
+    color: white;
+    background-color: black;
     padding: 12px;
 }
 
-.header.logo {
-    
+.header .logo img {
+    width: 48px;
+    height: auto;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0;
+    margin-left: auto;
+}
+
+.header li {
+    margin: 8px;
+    padding: 4px;
+}
+
+.header #last-item {
+    background-color: green;
+}
+
+/* footer css */
+
+.footer {
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+}
+
+.footer #company-name {
+    margin-right: auto;
+}
+
+.footer #designer-ref {
+}
+
+/* main content section */
+
+.content {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction {
+    display: flex;
+    margin: auto;
+    padding: 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+}
+
+.intro {
+    width: 300px;
+    margin: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 12px;
+}
+
+.intro button {
+    border: none;
+    border-radius: 4px;
+    align-self: center;
+    padding: 4px;
+}
+
+.introduction img {
+    width: 300px;
+    height: auto;
+}
+
+.information {
+    background-color: white;
+    padding: 32px;
+    text-align: center;
+}
+
+.information .info-section {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.info-section .item {
+    width: 200 px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-redirect {
+
+}
+
+.app-download {
+    text-align: center;
+    padding: 12px;
+    flex: auto;
+    margin-bottom: auto;
 }
