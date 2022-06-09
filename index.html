@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="box-sizing:border-box;">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Rasmus Zalite">
-        <link rel="stylesheet" href="static/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <title>CSS Project</title>
     </head>
     <body>
         <!--logo at left, links-withicons aon left: home, about, shop, my account, and my cart (rectangular box with icon)-->
         <div class="header">
-            <img class="logo" src="static/logo.png" alt="logo">
+            <img class="logo" src="images/biceps-logo.png" alt="logo">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">My Account</a></li>
-                <li id="last-item"><a href="#">My Cart</a></li>
+                <li id="last-item"><button type="button">My Cart</button></li>
             </ul>
         </div>
         <div class="content">
@@ -25,45 +26,75 @@
             <div class="introduction">
                 <div class="intro">
                     <h2>Welcome to _NAME_</h2>
-                    <p>Tired of having weak chicken legs? Get in shape here at _NAME_. Workout & meal plans, Training equipment, Personal coaching. </p>
+                    <p>Tired of having weak and small biceps? Get in shape here at _NAME_. Workout & meal plans, Training equipment, Personal coaching. Sign up today to start your journey of getting big biceps!</p>
                     <button type="button">Get Started</button>
                 </div>
-                <img id="intro-image" src="static/intro.png" alt="Get in shape inspirational picture">
+                <img id="intro-image" src="images/barbell-curl.webp" alt="Get in shape inspirational picture">
             </div>
             <!--information section just to give a bit more information on different products and services
                 workout & meal plans, coaching, supplements, training equipment-->
             <div class="information">
                 <h2>Information Section</h2>
                 <div class="info-section">
-                    <div class="info-item">
-                        <img id="workout-plans" src="" alt="">
+                    <div class="item">
+                        <img id="workout-plans" src="images/workout-plan.webp" alt="workout-plan picture">
                         <p>Choose between different workout plans that suit Your personal goals.</p>
                     </div>
-                    <div class="info-item">
-                        <img id="meal-plans" src="" alt="">
+                    <div class="item">
+                        <img id="meal-plans" src="images/nutrition-plan.jpg" alt="nutrition-plan picture">
                         <p>Fix Your diet using this guide to learn to take control of Your nutrition</p>
                     </div>
-                    <div class="info-item">
-                        <img id="coaching" src="" alt="">
+                    <div class="item">
+                        <img id="coaching" src="images/personal-training.jpg" alt="coaching picture">
                         <p>Get personal coaching to get a personalized approach to achieve Your goals faster and more efficiently</p>
                     </div>
-                    <div class="info-item">
-                        <img id="shop" src="" alt="">
+                    <div class="item">
+                        <img id="shop" src="images/supplements.jpg" alt="supplements and training equipment picture">
                         <p>Supplements, training equipment, anything You need</p>
                     </div>
                 </div>
             </div>
             <!--background image, a title and a redirect button of shopping categories: 
                 supplemets, equipment, workout and meal plans-->
-            <div class="shop-redirect">
-                <div class="catalogue">
-                    
+            <div class="testimonials">
+                <div class="item">
+                    <h2>One of the best!</h2>
+                    <p>I used to have rather small biceps before I discovered _NAME_. After several hours of hard work I gained 12 inches of bicep circumference. The women don't care, but at least my gym bros are impressed and I think one is crushing me now!</p>
+                    <footer><em>Rainis Myrkhaineken</em></footer>
+                </div>
+                <div class="item">
+                    <h2>Exquisite workouts and merchandise!</h2>
+                    <p>I like big biceps almost as much as I like big boobs. The former on men and the latter on women, of course. I hope one day a workout programme will be written for achieving big boobs aswell. It is simply necessary, ask anyone.</p>
+                    <footer><em>Tit H. Kanepileht</em></footer>
+                </div>
+                <div class="item">
+                    <h2>Not bad</h2>
+                    <p>Better than average biceps workout plan. At least he has minimum RPE of 9 for every exercise. Plus points for edible whey protein. Not scuffed yet.</p>
+                    <footer><em>Cenyan Cenius</em></footer>
+                </div>
+                <div class="item">
+                    <h2>Two words - Big Biceps!</h2>
+                    <p>That is what you will get when you follow the advice of _NAME_. It takes courage and a lot of effort to master the art of training biceps. You have to have the right mindset, an efficient training regime, and of course, proper nutrition. _NAME_ will help unleash the true potential of your biceps!</p>
+                    <footer><em>Rich Piano</em></footer>
                 </div>
             </div>
             <!--Fitness app to track workouts-->
-            <div class="app-download">
-                <h2>Download our new fitness app to track your workouts!</h2>
-                <button type="button">Download app</button>
+            <div class="services">
+                <div class="account">
+                    <h2>Register Account</h2>
+                    <p>Register a new account and begin your fitness journey!</p>
+                    <button type="button">Register Account</button>
+                </div>
+                <div class="shop">
+                    <h2>Shop</h2>
+                    <p>View our full catalogue of products and services.</p>
+                    <button type="button">View Shop</button>
+                </div>
+                <div class="app">
+                    <h2>Workout app</h2>
+                    <p>Download our new fitness app to track your workouts!</p>
+                    <button type="button">Download App</button>
+                </div>
             </div>
         </div>
         <!--footer, About links (Contact, etc), Shop links, Become an affiliate or smth
