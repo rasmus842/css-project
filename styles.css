@@ -1,7 +1,9 @@
 body {
     height: 100vh;
-    background-color: lightslategray;
+    color: #DDEDF4;
+    background-color: #212221;
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -9,20 +11,37 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #DDEDF4;
+}
+
+button {
+    background-color: #44449B;
+    color: #DDEDF4;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    align-self: center;
 }
 
 /* header css */
 
 .header {
+    color: #DDEDF4;
+    background-color: #212221;
+    white-space: nowrap;
     display: flex;
     align-items: center;
-    color: white;
-    background-color: black;
-    padding: 12px;
+    gap: 12px;
+    padding: 8px;
 }
 
-.header img {
+.header .logo {
+    font-size: 24px;
+    display: flex;
+    gap: 8px;
+}
+
+.logo img {
     width: 72px;
     height: auto;
 }
@@ -35,29 +54,24 @@ a {
 }
 
 .header li {
+    display: flex;
+    align-items: center;
     margin: 8px;
     padding: 4px;
-}
-
-.header #last-item {
-    background-color: green;
 }
 
 /* footer css */
 
 .footer {
-    background-color: darkgray;
+    white-space: nowrap;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 36px;
     padding: 12px;
 }
 
 .footer #company-name {
     margin-right: auto;
-}
-
-.footer #designer-ref {
 }
 
 /* main content section */
@@ -66,52 +80,65 @@ a {
     flex: auto;
     display: flex;
     flex-direction: column;
-    margin:auto;
+    margin: auto;
 }
 
 .introduction {
     display: flex;
-    margin: auto;
-    padding: 64px;
     justify-content: center;
     align-items: center;
-    gap: 128px;
+    flex-flow: row wrap;
 }
 
 .intro {
-    width: 300px;
-    margin: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 36px;
+}
+
+.intro .card {
+    width: 500px;
     padding: 12px;
+    border: 2px solid #212221;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
     gap: 12px;
 }
 
-.intro button {
-    border: none;
-    border-radius: 4px;
-    align-self: center;
-    padding: 4px;
+.intro .card h2 {
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .introduction img {
-    width: 300px;
-    height: auto;
+    flex: 0 0 auto;
 }
 
 /* info section */
 
 .information {
-    background-color: white;
-    padding: 32px;
+    color: #212221;
+    background-color: #DDEDF4;
+    padding: 72px;
+    gap: 36px;
     text-align: center;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: 900px;
 }
 
 .information .info-section {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
 }
 
 .info-section .item {
@@ -123,42 +150,86 @@ a {
 
 .item img {
     width: 300px;
+    border: 4px solid #1181B2;
+    border-radius: 4px;
 }
+
+/* testimonials */
 
 .testimonials {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
 }
+
+.testimonials h2 {
+    font-size: 36px;
+    font-weight: 900;
+    align-self: center;
+}
+
+.testimonials .testimonial-items {
+    font-size: 24px;
+    font-weight: 200;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 72px;
+    gap: 72px;
+}
+
 
 .testimonials .item {
     width: 500px;
+}
+
+.testimonials .item h2 {
+    font-size: 24px;
+}
+
+.item footer {
+    text-align: right;
 }
 
 /* shop redirect with categories etc */
 
 .services {
     display: flex;
+    color: #212221;
 }
 
 .services div {
     height: 500px;
-    width: 100%;
+    width: auto;
+    min-width: 200px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 36px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 12px;
-    flex: auto;
 }
 
 .account {
-    background: linear-gradient(0deg, rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), url("images/start-from-bottom.jpg");
+    background: linear-gradient(0deg, #1181B2B3, #1181B2B3), url("images/start-from-bottom.jpg");
+    color: #DDEDF4;
 }
 
 .shop {
-    background-image: url("images/shop.jpg");
+    background: linear-gradient(0deg, #DDEDF4B3, #DDEDF4B3), url("images/shop.jpg");
+    color: #212221;
 }
 
 .app {
-    background-image: url("images/dumbbell-curl.jpeg");
+    background: linear-gradient(0deg, #44449BB3, #44449BB3), url("images/dumbbell-curl.jpeg");
+    color: #DDEDF4;
+}
+
+.account h2,
+.shop h2,
+.app h2 {
+    font-size: 36px;
+    font-weight: 900;
 }

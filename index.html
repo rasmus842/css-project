@@ -8,26 +8,30 @@
         <title>CSS Project</title>
     </head>
     <body>
-        <!--logo at left, links-withicons aon left: home, about, shop, my account, and my cart (rectangular box with icon)-->
+        <!--logo at left, links-with icons aon left: home, about, shop, my account, and my cart (rectangular box with icon)-->
         <div class="header">
-            <img class="logo" src="images/biceps-logo.png" alt="logo">
+            <div class="logo">
+                <img src="images/biceps-logo.png" alt="logo">
+                <p><strong>Big Biceps</strong></p>
+            </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">&#9993; Contact</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">My Account</a></li>
-                <li id="last-item"><button type="button">My Cart</button></li>
+                <li><a href="#">&#128100; My Account</a></li>
             </ul>
+            <button type="button">&#128722; My Cart</button>
         </div>
         <div class="content">
-            <!--intro paragraph with a button to sign up on left, an inspirational image on right, 
-                also a nice background (maybe an image)-->
+            <!--intro paragraph with a button to sign up on left, an inspirational image on right-->
             <div class="introduction">
                 <div class="intro">
-                    <h2>Welcome to _NAME_</h2>
-                    <p>Tired of having weak and small biceps? Get in shape here at _NAME_. Workout & meal plans, Training equipment, Personal coaching. Sign up today to start your journey of getting big biceps!</p>
-                    <button type="button">Get Started</button>
+                    <div class="card">
+                        <h2>Welcome to Big Biceps</h2>
+                        <p>Tired of having weak and small biceps? Get in shape here at Big Biceps. Workout & meal plans, training equipment, personal coaching. Sign up today to start your journey of getting big biceps!</p>
+                        <button type="button">&#128170; Get Started</button>
+                    </div>
                 </div>
                 <img id="intro-image" src="images/barbell-curl.webp" alt="Get in shape inspirational picture">
             </div>
@@ -54,31 +58,33 @@
                     </div>
                 </div>
             </div>
-            <!--background image, a title and a redirect button of shopping categories: 
-                supplemets, equipment, workout and meal plans-->
             <div class="testimonials">
-                <div class="item">
-                    <h2>One of the best!</h2>
-                    <p>I used to have rather small biceps before I discovered _NAME_. After several hours of hard work I gained 12 inches of bicep circumference. The women don't care, but at least my gym bros are impressed and I think one is crushing me now!</p>
-                    <footer><em>Rainis Myrkhaineken</em></footer>
-                </div>
-                <div class="item">
-                    <h2>Exquisite workouts and merchandise!</h2>
-                    <p>I like big biceps almost as much as I like big boobs. The former on men and the latter on women, of course. I hope one day a workout programme will be written for achieving big boobs aswell. It is simply necessary, ask anyone.</p>
-                    <footer><em>Tit H. Kanepileht</em></footer>
-                </div>
-                <div class="item">
-                    <h2>Not bad</h2>
-                    <p>Better than average biceps workout plan. At least he has minimum RPE of 9 for every exercise. Plus points for edible whey protein. Not scuffed yet.</p>
-                    <footer><em>Cenyan Cenius</em></footer>
-                </div>
-                <div class="item">
-                    <h2>Two words - Big Biceps!</h2>
-                    <p>That is what you will get when you follow the advice of _NAME_. It takes courage and a lot of effort to master the art of training biceps. You have to have the right mindset, an efficient training regime, and of course, proper nutrition. _NAME_ will help unleash the true potential of your biceps!</p>
-                    <footer><em>Rich Piano</em></footer>
+                <h2>Testimonials</h2>
+                <div class="testimonial-items">
+                    <div class="item">
+                        <h2><em>One of the best!</em></h2>
+                        <p><em>I used to have rather small biceps before I discovered Big Biceps. After several hours of hard work I gained 12 inches of bicep circumference. The women don't care, but at least my gym bros are impressed and I think one is crushing me now!</em></p>
+                        <footer><strong>- Rainis Myrkhaineken</strong></footer>
+                    </div>
+                    <div class="item">
+                        <h2><em>Exquisite workouts and merchandise!</em></h2>
+                        <p><em>I like big biceps almost as much as I like big boobs. The former on men and the latter on women, of course. I hope one day a workout programme will be written for achieving big boobs aswell. It is simply necessary, ask anyone.</em></p>
+                        <footer><strong>- Tit H. Kanepileht</strong></footer>
+                    </div>
+                    <div class="item">
+                        <h2><em>Not bad</em></h2>
+                        <p><em>Better than your average biceps workout plan. At least he has a minimum RPE of 9 for every exercise. Plus points for edible whey protein. Not scuffed yet.</em></p>
+                        <footer><strong>- Cenyan Cenius</strong></footer>
+                    </div>
+                    <div class="item">
+                        <h2><em>Two words - Big Biceps!</em></h2>
+                        <p><em>That is what you will get when you follow the advice of Big Biceps. It takes courage and a lot of effort to master the art of training biceps. You have to have the right mindset, an efficient training regime, and of course, proper nutrition. Big Biceps will help unleash the true potential of your biceps!</em></p>
+                        <footer><strong>- Rich Piano</strong></footer>
+                    </div>
                 </div>
             </div>
-            <!--Fitness app to track workouts-->
+            <!--Background image and background color,
+                redirect links to :Register for account, online shopping, Fitness app to track workouts-->
             <div class="services">
                 <div class="account">
                     <h2>Register Account</h2>
@@ -91,17 +97,16 @@
                     <button type="button">View Shop</button>
                 </div>
                 <div class="app">
-                    <h2>Workout app</h2>
+                    <h2>Workout App</h2>
                     <p>Download our new fitness app to track your workouts!</p>
                     <button type="button">Download App</button>
                 </div>
             </div>
         </div>
-        <!--footer, About links (Contact, etc), Shop links, Become an affiliate or smth
-            bottom footer: company name and copyright, then web design reference-->
+        <!--footer, company name and reference of website designer-->
         <div class="footer">
-            <div id="company-name">&#169;_NAME_ Inc., 2022</div>
-            <div id="designer-ref">Web design by Rasmus Zalite at github.com/rasmus842</div>
+            <div id="company-name">&#169; Big Biceps Inc., 2022</div>
+            <div id="designer-ref">Web design by Rasmus Zalite at <a href="https://github.com/rasmus842/css-project">github.com/rasmus842</a></div>
         </div>
     </body>
 </html>
